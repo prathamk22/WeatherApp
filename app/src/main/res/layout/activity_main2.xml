@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather"
+    tools:context="lifeline.learn.com.clashofclansdata.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        app:srcCompat="@drawable/weathericon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView3">
+
+        <Button
+            android:id="@+id/get"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="94dp"
+            android:alpha="0.7"
+            android:text="Get Temperature" />
+
+        <Button
+            android:id="@+id/scheduler"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/get"
+            android:layout_below="@+id/get"
+            android:layout_marginTop="21dp"
+            android:alpha="0.7"
+            android:text="Scheduler" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/scheduler"
+            android:layout_below="@+id/scheduler"
+            android:layout_marginTop="21dp"
+            android:alpha="0.7"
+            android:text="Exit" />
+    </RelativeLayout>
+
+</RelativeLayout>
